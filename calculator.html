@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        .layout{
+            border: 2px red solid;
+            margin: 20px;
+            background-color: lightgray;
+        }
+        .keys{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            width: 210px;
+        }
+        .digit{
+            margin: 10px ;
+            width: 50px;
+            height: 50px;
+            border: 2px black solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: yellow;
+            cursor: pointer;
+        }
+        .operator{
+            margin: 10px ;
+            width: 50px;
+            height: 50px;
+            border: 2px black solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: blue;
+            cursor: pointer;
+        }
+        .function{
+            margin: 10px ;
+            width: 50px;
+            height: 50px;
+            border: 2px black solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: green;
+            cursor: pointer;
+        }
+        .screen{
+            width: 270px;
+            margin: 10px;
+            height: 100px;
+            border: 2px black solid;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="layout">
+            <div class="screen display"></div>
+            <div class="keys">
+                <div class="keypad function clear">C</div>
+                <div class="keypad function percent">%</div>
+                <div class="keypad function delete">DEL</div>
+                <div class="keypad operator division">/</div>
+                <div class="keypad digit seven">7</div>
+                <div class="keypad digit eight">8</div>
+                <div class="keypad digit nine">9</div>
+                <div class="keypad operator multiplication">*</div>
+                <div class="keypad digit four">4</div>
+                <div class="keypad digit five">5</div> 
+                <div class="keypad digit six">6</div>
+                <div class="keypad operator subtraction">-</div>
+                <div class="keypad digit one">1</div>
+                <div class="keypad digit two">2</div>
+                <div class="keypad digit three">3</div>
+                <div class="keypad operator addition">+</div>
+                <div class="keypad digit plus-minus">+/-</div>
+                <div class="keypad digit zero">0</div>
+                <div class="keypad digit point">.</div>
+                <div class="keypad function equal">=</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
